@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
   }
 
@@ -171,5 +171,39 @@ form input[type="submit"] {
   form input[type="submit"]:hover {
     background-color: #d81b60;
     transform: scale(1.03);
+  }
+  
+  .quote {
+    text-align: center;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    margin: 3rem auto;
+    font-size: 1.5rem;
+    color: #e91e63;
+  }
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1rem 2rem;
+    border-radius: 10px;
   }
   
